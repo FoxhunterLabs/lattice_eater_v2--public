@@ -10,7 +10,10 @@
 
 ### Audit Chain
 Every event → `SHA-256(event_json)` → appended to `audit.log`  
-Forensic replay: `sqlite3 lattice_eater.db "SELECT * FROM runs LIMIT 10"`
+Forensic replay:  
+```bash
+sqlite3 lattice_eater.db "SELECT * FROM runs LIMIT 10"
+```
 
 ---
 
